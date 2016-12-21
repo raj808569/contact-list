@@ -49,5 +49,5 @@ app.put('/contactlist/:id',function(req,res){
     });
 });
 
-app.listen(3000);
+app.set('port',(process.env.PORT||8080));
 console.log('listening on port 3000');
